@@ -11,11 +11,11 @@ genius = lyricsgenius.Genius(token)
 #song = genius.search_song("haunt u", "lil peep")
 #print(song.lyrics)
 
-def lyricFinder(Song,Artist):{
+def lyricFinder(Song,Artist):
      song = genius.search_song(Song, Artist)
      return song.lyrics
 
-}
+
 Lyrics = lyricFinder("Carnival","Kanye west")
 
 print(Lyrics)
