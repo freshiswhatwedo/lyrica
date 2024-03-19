@@ -19,7 +19,7 @@ def lyricFinder(Song,Artist):
         return lyrics_dict
 
 
-Lyrics = lyricFinder("Carnival","Kanye west")
+Lyrics = lyricFinder("runaway","Kanye west")
 
 print(Lyrics)
    
