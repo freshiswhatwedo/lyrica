@@ -19,12 +19,21 @@ def lyricFinder(Song,Artist):
         return lyrics_dict
       
 
+def lineNumber(L):
+    for i in L:
+        value = value + 1
+        int(value)
+        return value
 
 
 Song = input("Whats the songs name?")
 Artist = input("Whats the artists name?")
-Lyrics = lyricFinder(Song,Artist)
 
-print(Lyrics)
+Lyrics = lyricFinder(Song,Artist)
+linenumber = lineNumber(Lyrics)
+print(lineNumber)
+
+# for i in Lyrics[range(2,lineNumber)]
+# print(Lyrics)
    
 
