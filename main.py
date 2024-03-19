@@ -1,4 +1,5 @@
 import lyricsgenius
+import 
 
 token = "SJgV3xqS7Lim040mG6wG0e5pJAX6LrSZ4UIod4Dm392eBtALTyfVF18scCWbwMEP"
 genius = lyricsgenius.Genius(token)
@@ -31,6 +32,9 @@ Artist = input("Whats the artists name?")
 
 Lyrics = lyricFinder(Song,Artist)
 linenumber = lineNumber(Lyrics)
+
+lineNumber = list(Lyrics.values())
+
 print(lineNumber)
 
 # for i in Lyrics[range(2,lineNumber)]
