@@ -6,4 +6,4 @@ genius = lyricsgenius.Genius(token)
 artist = genius.search_artist("Andmax", max_songs=3, sort="title")
 print(artist.songs)
 
-bro
+print("hi")
