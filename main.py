@@ -11,14 +11,21 @@ genius = lyricsgenius.Genius(token)
 #song = genius.search_song("haunt u", "lil peep")
 #print(song.lyrics)
 
+# def lyricFinder(Song,Artist):
+#      song = genius.search_song(Song, Artist)
+#      if song:
+#         lyrics_lines = song.lyrics.split('\n')
+#         lyrics_dict = {i+1: line for i, line in enumerate(lyrics_lines) if line.strip() != ''}
+#         return lyrics_dict
+
 def lyricFinder(Song,Artist):
-     song = genius.search_song(Song, Artist)
-     if song:
+    song = genius.search_song(Song, Artist)
+    if song:
         lyrics_lines = song.lyrics.split('\n')
         lyrics_dict = {i+1: line for i, line in enumerate(lyrics_lines) if line.strip() != ''}
         return lyrics_dict
-
-
+    else:
+        return None
 Lyrics = lyricFinder("runaway","Kanye west")
 
 print(Lyrics)
