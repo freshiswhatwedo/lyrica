@@ -13,7 +13,7 @@ genius = lyricsgenius.Genius(token)
 
 def lyricFinder(Song,Artist):
      song = genius.search_song(Song, Artist)
-    if song:
+     if song:
         lyrics_lines = song.lyrics.split('\n')
         lyrics_dict = {i+1: line for i, line in enumerate(lyrics_lines) if line.strip() != ''}
         return lyrics_dict
