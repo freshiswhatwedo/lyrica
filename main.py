@@ -1,12 +1,17 @@
 import syncedlyrics
+from io import open
 
 song = "haunt u"
 artist= "lil peep"
 lrc = syncedlyrics.search(f"[{song}] [{artist}]")
 
-print(lrc)
+text = "asddasdasads"
 
-file = open("./lyrics.txt","a")
-file.write = lrc
+file = open("./LRC","w")
+file.write(lrc)
 file.close
+
+file = open("./LRC","r")
+file = file.read()
+print(file)
 
