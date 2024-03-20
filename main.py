@@ -6,7 +6,7 @@ lrc = syncedlyrics.search(f"[{song}] [{artist}]")
 
 print(lrc)
 
-file = open("./var/scripts/lyrica/lyrics.txt","a")
+file = open("./lyrics.txt","a")
 file.write = lrc
 file.close
 
