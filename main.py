@@ -27,15 +27,18 @@ def lineNumber(L):
         return value
 
 
-Song = input("Whats the songs name?")
-Artist = input("Whats the artists name?")
+# Song = input("Whats the songs name?")
+# Artist = input("Whats the artists name?")
+  
+Song = "haunt u"
+Artist = "lil peep"
 
 Lyrics = lyricFinder(Song,Artist)
 linenumber = lineNumber(Lyrics)
+print(linenumber)
+print(Lyrics)
 
-lineNumber = list(Lyrics.values())
 
-print(lineNumber)
 
 # for i in Lyrics[range(2,lineNumber)]
 # print(Lyrics)
